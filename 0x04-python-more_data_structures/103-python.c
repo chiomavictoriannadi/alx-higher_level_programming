@@ -2,10 +2,10 @@
 #include <Python.h>
 
 /**
- * print_python_bytes - This function prints bytes information
+ * print_python_bytes - Prints bytes information
  *
  * @p: Python Object
- * Return: no return may be allowed
+ * Return: no return
  */
 void print_python_bytes(PyObject *p)
 {
@@ -42,10 +42,10 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_list - This function prints list information
+ * print_python_list - Prints list information
  *
  * @p: Python Object
- * Return: no return must be allowed
+ * Return: no return
  */
 void print_python_list(PyObject *p)
 {
@@ -67,3 +67,4 @@ void print_python_list(PyObject *p)
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
 	}
+}
